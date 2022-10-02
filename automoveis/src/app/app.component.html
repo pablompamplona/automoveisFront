@@ -1,0 +1,23 @@
+<mat-drawer-container class="example-container" color="primary">
+    <mat-drawer mode="side" class= "side-bar" opened>
+      <section>
+        <div class="button-row">
+          <div class="button-nav">
+            <button mat-raised-button color="accent">Fabricantes</button>
+          </div>
+          <div class="button-nav">
+            <button mat-raised-button color="accent">Modelos</button>
+          </div>
+        </div>
+      </section>
+    </mat-drawer>
+    <mat-drawer-content>
+      <mat-toolbar class = "main-header" color="primary">
+        <span>Listagem de Veículos</span>
+      </mat-toolbar>
+
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
+
+

@@ -1,0 +1,14 @@
+<section>
+  <div class="menu-button-row">
+      <button mat-flat-button color="primary" (click)="listarFabricantes()">Listar Fabricantes</button>
+      <mat-form-field class="consulta-form-field" appearance="fill">
+        <mat-label>Digite o nome do fabricante</mat-label>
+        <input matInput type="text" [(ngModel)]="nome">
+        <button *ngIf="nome" matSuffix mat-icon-button aria-label="Clear" (click)="nome=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <button mat-flat-button color="primary" (click)="consultarFabricantePorNome()">Consultar por Nome</button>
+
+  </div>
+</section>
